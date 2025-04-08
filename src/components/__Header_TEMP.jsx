@@ -1,7 +1,7 @@
 import React from 'react'
 import WORD from '../assets/images/WORD.png'
 
-const Navbar = () => {
+const Header = () => {
   return (
    <nav className=" sticky top-0 z-50 h[15vh] -webkit-sticky   bg-slate-200   sm:z-50">
            <div className="flex  justify-between items-center p-5   w-[80wv] ">
@@ -50,4 +50,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Header

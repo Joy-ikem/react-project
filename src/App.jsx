@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Navbar from './components/navbar';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import Home from './components/Home';
 import Body from './components/Body';
@@ -14,7 +14,7 @@ import Screen from './components/Screen';
 const App = () => {
   return (
     <>
-    <Navbar />  
+    <Header />  
     < Hero/>
     <Home/>
     <Body/>
