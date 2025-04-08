@@ -6,88 +6,70 @@ import ikem from '../assets/images/ikem.png';
 import ruth from '../assets/images/ruth.png';
 import maydive from '../assets/images/maydive.png';
 
+const Section = ({ number, title, description, image, reverse }) => {
+  return (
+    <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-center justify-between w-full py-10 px-5 sm:px-16`}>
+      <div className="w-full sm:w-1/2 h-[60vh]">
+        <img src={image} alt={title} className="w-full h-full object-cover" />
+      </div>
+      <div className="w-full sm:w-1/2 bg-slate-100 p-6 flex flex-col justify-center relative h-[60vh]">
+        <div className="relative">
+          <p className="text-8xl sm:text-9xl text-gray-500 font-bold">{number}</p>
+          <p className="absolute text-lg sm:text-3xl font-bold text-gray-900" style={{ top: '60px' }}>
+            {title}
+          </p>
+        </div>
+        <p className="mt-8 sm:mt-10 text-xl sm:text-2xl">{description}</p>
+        <p className="text-green-500 hover:text-red-500 transition-colors duration-300 text-lg sm:text-xl font-mono mt-3">
+          Learn More
+        </p>
+      </div>
+    </div>
+  );
+};
+
 const Body = () => {
   return (
     <section className="w-full">
-      {/* Product Development Section */}
-      <div className="flex items-center justify-between py-10 space-x-10 px-5 sm:px-16">
-        <div className="relative w-[50%] p-10 bg-zinc-200 flex flex-col justify-between h-[60vh]">
-          <p className="text-9xl text-gray-500 font-bold">01</p>
-          <p className="absolute top-24 text-3xl lg:text-6xl font-bold text-gray-900">Product <br /> Development</p>
-          <p className="text-2xl mt-5">We have over a decade of experience in Product Development.</p>
-          <p className="text-2xl font-mono text-green-500 mt-3">Learn More</p>
-        </div>
-        <div className="w-[50%] h-[60vh]">
-          <img className="w-full h-full object-cover" src={pete} alt="Product Development" />
-        </div>
-      </div>
-
-      {/* UX Research Section */}
-      <div className="flex items-center justify-between py-10 space-x-10 px-5 sm:px-16">
-        <div className="w-[50%] h-[60vh]">
-          <img className="w-full h-full object-cover" src={bla} alt="UX Research" />
-        </div>
-        <div className="relative w-[50%] p-10 bg-slate-100 flex flex-col justify-between h-[60vh]">
-          <p className="text-9xl text-gray-500 font-bold">02</p>
-          <p className="absolute top-24 text-3xl lg:text-6xl font-bold text-gray-900">UX Research</p>
-          <p className="text-2xl mt-5">Our Product Design Unit focuses on in-depth UX research.</p>
-          <p className="text-green-500 text-2xl font-mono mt-3">Learn More</p>
-        </div>
-      </div>
-
-      {/* IT Consultancy Section */}
-      <div className="flex items-center justify-between py-10 space-x-10 px-5 sm:px-16">
-        <div className="relative w-[50%] p-10 bg-slate-100 flex flex-col justify-between h-[60vh]">
-          <p className="text-9xl text-gray-500 font-bold">03</p>
-          <p className="absolute top-24 text-3xl lg:text-6xl font-bold text-gray-900">I.T Consultancy</p>
-          <p className="text-3xl mt-5">Leverage our experience in both business development and IT.</p>
-          <p className="text-green-500 text-2xl font-mono mt-3">Learn More</p>
-        </div>
-        <div className="w-[50%] h-[60vh]">
-          <img className="w-full h-full object-cover" src={ikem} alt="IT Consultancy" />
-        </div>
-      </div>
-
-      {/* Quality Assurance Section */}
-      <div className="flex items-center justify-between py-10 space-x-10 px-5 sm:px-16">
-        <div className="w-[50%] h-[60vh]">
-          <img className="w-full h-full object-cover" src={ruth} alt="Quality Assurance" />
-        </div>
-        <div className="relative w-[50%] p-10 bg-slate-100 flex flex-col justify-between h-[60vh]">
-          <p className="text-9xl text-gray-500 font-bold">04</p>
-          <p className="absolute top-24 text-3xl lg:text-6xl font-bold text-gray-900">Quality Assurance</p>
-          <p className="text-3xl mt-5">Rethink your company's offering with a digital-first approach.</p>
-          <p className="text-green-500 text-2xl font-mono mt-3">Learn More</p>
-        </div>
-      </div>
-
-      {/* Mobile App Development Section */}
-      <div className="flex items-center justify-between py-10 space-x-10 px-5 sm:px-16">
-        <div className="relative w-[50%] p-10 bg-slate-100 flex flex-col justify-between h-[60vh]">
-          <p className="text-9xl text-gray-500 font-bold">05</p>
-          <p className="absolute top-24 text-3xl lg:text-6xl font-bold text-gray-900">Mobile App Development</p>
-          <p className="text-3xl mt-5">Create mobile apps with excellent usability.</p>
-          <p className="text-green-500 text-2xl font-mono mt-3">Learn More</p>
-        </div>
-        <div className="w-[50%] h-[60vh]">
-          <img className="w-full h-full object-cover" src={daven} alt="Mobile App Development" />
-        </div>
-      </div>
-
-      {/* Talent Outsourcing Section */}
-      <div className="flex items-center justify-between py-10 space-x-10 px-5 sm:px-16">
-        <div className="w-[50%] h-[60vh]">
-          <img className="w-full h-full object-cover" src={maydive} alt="Talent Outsourcing" />
-        </div>
-        <div className="relative w-[50%] p-10 bg-slate-100 flex flex-col justify-between h-[60vh]">
-          <p className="text-9xl text-gray-500 font-bold">06</p>
-          <p className="absolute top-24 text-2xl lg:text-6xl font-bold text-gray-900">Talent Outsourcing</p>
-          <p className="lg:text-3xl text-2xl mt-5">Get well-trained and experienced Developers.</p>
-          <p className="text-green-500 text-2xl font-mono mt-3">Learn More</p>
-        </div>
-      </div>
-
-      {/* Spacer Section */}
+      <Section
+        number="01"
+        title="Product Development"
+        description="We have over a decade of experience in Product Development."
+        image={pete}
+      />
+      <Section
+        number="02"
+        title="UX Research"
+        description="Our Product Design Unit focuses on in-depth UX research."
+        image={bla}
+        reverse
+      />
+      <Section
+        number="03"
+        title="I.T Consultancy"
+        description="Leverage our experience in both business development and IT."
+        image={ikem}
+      />
+      <Section
+        number="04"
+        title="Quality Assurance"
+        description="Rethink your company's offering with a digital-first approach."
+        image={ruth}
+        reverse
+      />
+      <Section
+        number="05"
+        title="Mobile App Development"
+        description="Create mobile apps with excellent usability."
+        image={daven}
+      />
+      <Section
+        number="06"
+        title="Talent Outsourcing"
+        description="Get well-trained and experienced Developers."
+        image={maydive}
+        reverse
+      />
       <div className="bg-white h-[15vh] w-full"></div>
     </section>
   );

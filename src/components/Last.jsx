@@ -3,7 +3,7 @@ import WORD from '../assets/images/WORD.png';
 
 const Last = () => {
   return (
-    <section className="m-8"> {/* Added margin to the entire section */}
+    <section className="m-8">
       <div className="h-[50vh] bg-blue-950 text-white flex justify-between items-center p-10 space-x-10">
         
         {/* Left Section - Zealiight Info */}
@@ -24,8 +24,7 @@ const Last = () => {
           <p className="text-2xl">ikemjoy57@gmail.com</p>
           <br />
           
-          {/* Social Icons with Padding and Space Between Icons */}
-          <div className="flex justify-end space-x-20 p-5 mt-4"> {/* Increased space from 8 to 12 */}
+          <div className="flex justify-end space-x-20 p-5 mt-4">
             <a href="https://www.linkedin.com/in/ikem-chinonso-454117249/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3BadL5Pb0vTSa262MEUNQonA%3D%3D">
               <p className="hover:text-gray-300">
                 <i className="fa fa-linkedin-square fa-2x"></i>
