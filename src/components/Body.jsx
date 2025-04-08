@@ -10,7 +10,7 @@ const Section = ({ number, title, description, image, reverse }) => {
   return (
     <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-center justify-between w-full py-10 px-5 sm:px-16`}>
       <div className="w-full sm:w-1/2 h-[60vh]">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <img src={image} alt={title} className="w-[100vw] h-full object-cover " />
       </div>
       <div className="w-full sm:w-1/2 bg-slate-100 p-6 flex flex-col justify-center relative h-[60vh]">
         <div className="relative">
