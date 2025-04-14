@@ -9,22 +9,24 @@ import maydive from '../assets/images/maydive.png';
 // Section component
 const Section = ({ number, title, description, image, reverse }) => {
   return (
-    <div className="border-0 rounded-lg p-6">
-      <div className={`flex flex-col sm:flex-row ${reverse ? 'sm:flex-row-reverse' : ''} border-0 shadow-lg rounded-lg overflow-hidden p-4`}>
-        <div className="w-full sm:w-1/2 h-80 sm:h-96 border-0 p-4">
-          <img src={image} alt={title} className="w-full h-full object-cover" />
+    <div className="border-0 rounded-lg px-4 sm:px-10 md:px-20 py-10 sm:container,mx-auto container mx-auto">
+      <div className={`flex flex-col sm:flex-row ${reverse ? 'sm:flex-row-reverse' : ''} border-0 shadow-lg rounded-lg overflow-hidden `}>
+        <div className="w-full sm:w-1/2 h-80 sm:h-96 border-0  ">
+          <img src={image} alt={title} className="w-full  h-full object-cover rounded-2xl " />
         </div>
-        <div className="w-full sm:w-1/2 bg-slate-100 p-10 flex flex-col justify-center relative h-auto sm:h-96 border-0 leading-8">
+        <div className=''>
+        <div className=" sm:w-1/2 bg-slate-100  flex flex-col justify-center relative h-auto sm:h-96 border-0 leading-7  w-full">
           <div className="relative">
             <p className="text-6xl sm:text-8xl text-gray-500 font-bold">{number}</p>
             <p className="absolute text-lg sm:text-2xl font-bold text-gray-900" style={{ top: '40px' }}>
               {title}
             </p>
           </div>
-          <p className="mt-6 sm:mt-8 text-base sm:text-2xl">{description}</p>
-          <p className="text-green-500 hover:text-red-500 transition-colors duration-300 text-base sm:text-lg font-mono mt-3 cursor-pointer">
+          <p className=" sm:mt-8 text-base sm:text-2xl">{description}</p>
+          <p className="text-green-500 hover:text-red-500 transition-colors duration-300 text-base sm:text-lg font-mono  cursor-pointer">
             Learn More
           </p>
+        </div>
         </div>
       </div>
     </div>
