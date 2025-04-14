@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section className="h-auto lg:h-[35vh] bg-white text-gray-400">
       <div className="flex flex-col items-center justify-center p-5 space-y-8 lg:space-y-10 text-center">
-        <p className="text-2xl font-bold lg:text-4xl">
+        <p className="text-2xl text-black  font-bold lg:text-4xl">
           Our Zeal to build the better way
         </p>
         <p className="text-base font-light lg:text-3xl leading-relaxed">
