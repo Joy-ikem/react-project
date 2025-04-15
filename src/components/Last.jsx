@@ -28,7 +28,7 @@ const Last = () => {
             <a href="https://www.linkedin.com/in/ikem-chinonso-454117249/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3BadL5Pb0vTSa262MEUNQonA%3D%3D" className='w-25'>
              <Lottie animationData={Animationfirst}/>
             </a>
-            <a href="https://wa.me/08109038457" target="_blank" rel="noopener noreferrer" className='w-25 '>
+            <a href="https://wa.me/+2348109038457&text=Hello%20*Joy*%20My%20name%20is%20__" target="_blank" rel="noopener noreferrer" className='w-25 '>
               <Lottie animationData={Myanimation} />
             </a>
             <a href="mailto:michtservicesatgmail.com" className='w-20'>
